@@ -97,7 +97,7 @@ h6,
  } 
 
  .list-item + .list-item {
-     margin-left: 30px;
+     margin-left: 50px;
  }
 
  .nav-item {
@@ -142,6 +142,10 @@ h6,
      display: flex;
      margin-left: auto;
  }
+
+ .tel-mail-list-item + .tel-mail-list-item {
+    margin-left: 30px;
+}
 
  .tel-mail-item {
      display: flex;
@@ -311,7 +315,7 @@ h6,
  .work-item {
      flex-basis: calc((100% - 60px) / 3);
      margin-right: 30px;  
-     position: relative;    
+     position: relative;  
  }
 
  .work-item:last-child {
@@ -321,8 +325,10 @@ h6,
  .work-img-wrapper {
     background-color: rgba(47, 48, 58, 0.8);
     min-width: 100%;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -332,7 +338,6 @@ h6,
         font-size: 14px;   
         font-weight: 700;
         line-height: 1.14;
-        text-align: center;
         text-transform: uppercase;    
         color: var(--primary-white-color);
         text-decoration: none;
